@@ -6,6 +6,7 @@ Glenna - Nordic Cloud Environment
     :maxdepth: 2
 
 
+    wp00/index
     wp01/index
     wp02/index
     wp03/index
