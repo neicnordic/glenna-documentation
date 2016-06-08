@@ -3,7 +3,7 @@ Glenna - Nordic Cloud Environment
 =================================
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 4
 
 
     wp00/index
