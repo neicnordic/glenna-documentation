@@ -2,6 +2,10 @@
 Infrastructure as a Service
 ===========================
 
+:Authors:
+
+    Uwe Grawert, Kalle Happonen, Daniel Huluka, Peter Jenkins, Risto Laurikainen
+
 .. toctree::
     :maxdepth: 2
 
