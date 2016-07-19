@@ -124,7 +124,9 @@ Threat 2: Data Loss
 *******************
 
 **BCR-11 (DG-04)**
+
 **GRM-02 (DG-08)**
+
 **BCR-05 (RS-05): Business Continuity Management & Operational Resilience Environmental Risks**
 **Desc:** Physical protection against damage from natural causes and disasters, as well as deliberate attacks, including fire, flood, atmospheric electrical discharge, solar induced geomagnetic storm, wind, earthquake, tsunami, explosion, nuclear accident, volcanic activity, biological hazard, civil unrest, mudslide, tectonic activity, and other forms of natural or man-made disaster shall be anticipated, designed, and have countermeasures applied.
 
@@ -164,8 +166,10 @@ Threat 3: Account or Service Traffic Hijacking
 **SEF-02 (IS-22): Security Incident Management, E-Discovery & Cloud Forensics Incident Management**
 **Desc:** Policies and procedures shall be established, and supporting business processes and technical measures implemented, to triage security-related events and ensure timely and thorough incident management, as per established IT service management policies and procedures.
 
-**IAM-12 (SA-02): Identity & Access Management User ID Credentials**
+**IAM-12 (SA-02)**
+
 **IAM-12 (SA-07)**
+
 **IVS-01 (SA-14): Infrastructure & Virtualization Security Audit Logging / Intrusion Detection**
 **Desc:** Higher levels of assurance are required for protection, retention, and lifecycle management of audit logs, adhering to applicable legal, statutory or regulatory compliance obligations and providing unique user access accountability to detect potentially suspicious network behaviors and/or file integrity anomalies, and to support forensic investigative capabilities in the event of a security breach.
 
@@ -173,7 +177,9 @@ Threat 4: Insecure Interfaces and APIs
 **************************
 
 **IAM-08 and IAM-09 (IS-08)**
+
 **AIS-04 (SA-03)**
+
 **AIS-01 (SA-04): Application & Interface Security Application Security**
 **Desc:** Applications and programming interfaces (APIs) shall be designed, developed, deployed, and tested in accordance with leading industry standards (e.g., OWASP for web applications) and adhere to applicable legal, statutory, or regulatory compliance obligations.
 
@@ -230,7 +236,9 @@ Threat 6: Malicious Insiders
 **Desc:** User access policies and procedures shall be established, and supporting business processes and technical measures implemented, for restricting user access as per defined segregation of duties to address business risks associated with a user-role conflict of interest.
 
 **EKM-03 (IS-18)**
+
 **EKM-02 (IS-19)**
+
 **IAM-01 (IS-29): Identity & Access Management Audit Tools Access**
 **Desc:** Access to, and use of, audit tools that interact with the organization's information systems shall be appropriately segmented and restricted to prevent compromise and misuse of log data.
 
@@ -256,11 +264,14 @@ Threat 7: Abuse of Cloud Services
 Threat 8: Insufficient Due Diligence
 ************
 **GRM-02 (DG-08)**
+
 **GRM-01 (IS-04)**
+
 **IAM-08 (IS-12): Identity & Access Management Trusted Sources**
 **Desc:** Policies and procedures are established for permissible storage and access of identities used for authentication to ensure identities are only accessible based on rules of least privilege and replication limitation only to users explicitly defined as business necessary.
 
 **IVS-04 (OP-03)**
+
 **GRM-11 (RI-01): Governance and Risk Management Risk Management Framework**
 **Desc:** Risks shall be mitigated to an acceptable level. Acceptance levels based on risk criteria shall be established and documented in accordance with reasonable resolution time frames and stakeholder approval.
 
@@ -300,7 +311,9 @@ Threat 8: Insufficient Due Diligence
 * Method for plan invocation
 
 **AIS-04 (SA-03)**
+
 **AIS-01 (SA-04)**
+
 **IVS-06 (SA-08): Infrastructure & Virtualization Security Network Security**
 **Desc:** Network environments and virtual instances shall be designed and configured to restrict and monitor traffic between trusted and untrusted connections. These configurations shall be reviewed at least annually, and supported by a documented justification for use for all allowed services, protocols, and ports, and by compensating controls.
 
@@ -309,15 +322,22 @@ Threat 8: Insufficient Due Diligence
 Threat 9: Shared Technology Vulnerabilities
 **********************
 **DSI-01 (DG-03)**
+
 **GRM-01 (IS-04)**
+
 **IAM-02 (IS-07)**
+
 **IAM-05 (IS-15)**
+
 **EKM-03 (IS-18)**
+
 **TVM-02 (IS-20): Threat and Vulnerability Management Vulnerability / Patch Management**
 **Desc:** Policies and procedures shall be established, and supporting processes and technical measures implemented, for timely detection of vulnerabilities within organizationally-owned or managed applications, infrastructure network and system components (e.g. network vulnerability assessment, penetration testing) to ensure the efficiency of implemented security controls. A risk-based model for prioritizing remediation of identified vulnerabilities shall be used. Changes shall be managed through a change management process for all vendor-supplied patches, configuration changes, or changes to the organization's internally developed software. Upon request, the provider informs customer (tenant) of policies and procedures and identfied weaknesses especially if customer (tenant) data is used as part the service and/or customer (tenant) has some shared responsibility over implementation of control.
 
 **IAM-12 (SA-02)**
+
 **IVS-09 (SA-09)**
+
 **IVS-09 (SA-11): Infrastructure & Virtualization Security Segmentation **
 **Desc:** Multi-tenant organizationally-owned or managed (physical and virtual) applications, and infrastructure system and network components, shall be designed, developed, deployed and configured such that provider and customer (tenant) user access is appropriately segmented from other tenant users, based on the following considerations:
 
