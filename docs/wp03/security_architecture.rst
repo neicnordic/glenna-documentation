@@ -28,7 +28,7 @@ Apart from keeping the confidentiality and integrity of systems and data, availa
 
 Based on what we have experienced so far there are systems and solutions in the Nordics that can aid the security of the Glenna Federation and we try to come up with security solutions that can be added on top of the existing ones and makes the entire system more secure.  In the next section we go through the suggested security architecture and security components specifications for Glenna.
 
-Security Architecture and Specification for Glenna (suggested security architecture for Glenna and detailed specifications 
+Security Architecture and Specification for Glenna (suggested security architecture for Glenna and specifications 
 **************************************************
 of its security components)
 
@@ -51,3 +51,9 @@ As mentioned in the beginning of this section for each service delivery model th
 The way the federation works, differs based on the way resource authorization is decided. For instance if all authenticated users can gain access to available cloud resources with no limitation every individual can be considered autonomously and authentication through Kalmar2 or eduGAIN would suffice. In such scenario, as the individual users are autonomously authenticated and authorized to cloud resources, the users may be billed directly or the institute they are affiliated to can be billed. In this scenario, we can only identify to which institute the user belongs to based on the user account. There is no other group or project information that can be taken into consideration for billing. 
 
 The second scenario involves consideration of users’ affiliation to groups or projects. In such cases, authorization decision to resources takes the group membership of users into consideration and there can also be resource limitation depending on the resource level the groups or projects are subscribed to. The billing in this scenario shall be directly attached to individual users or the groups/projects they belong to.
+
+We suggested the following security architecture for the Glenna project considering the security issues discussed in this section and showing how the project shall handle its resources in a secure manner. 
+
+
+.. image:: images/glenna_arch.png
+      :alt: Glenna Security Architecture
