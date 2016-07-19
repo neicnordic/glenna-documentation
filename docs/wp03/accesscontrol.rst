@@ -3,25 +3,11 @@ Controlling Access in Virtual Infrastructures
 
 Access control for the core Glenna infrastructure. It includes secure access to virtual machines and technologies for securing hypervisor and guest OS:s.
 
-Like any other IT system, openstack based cloud deployments are vulnerable to security threats. The openstack security guideline identifies four elements in the security domain - 
-users, applications, servers or networks that share common trust requirements and expectations within a system. Of which we can roughly cataegorize applications, servers and networks
- as virtual infrastructure. In this section we focus on how access control can be done to such virtual infrastructure so that only authenticated and authorized users or services get 
-access. 
-
-The underlying virtualization technology with in openstack provides enterprise-level capabilities in any openstack deployment. As capabilities like scalability, efficency, uptime and
- the likes are controlled by it; important virtual infrastrcutre within openstack are also managed by the virtualization technology in use. The openstack security guideline and the 
-Hypervisor Support matrix (https://wiki.openstack.org/wiki/HypervisorSupportMatrix) present detailed information about the differnt supported virtualization tools and thier access 
-control capabilities. However such capabilities vary from one version of the tool to another or one openstack release to another; so we focus more on general issues related to the 
-security of virtual infrastructures.
-In virtualization the hypervisor has main responsibility to secure the entire virtualization environment. Hypervisors have to be secure enough to block attacks directed to the 
-hypervisor itself, the host and/or the guest OS. Attackers usually try to break out of a guest OS so that they can gain access to the hypervisor, other guest OSs, or the underlying 
-host. Compromise of the hypervisor can give control of all of its guest Oss to the attacker which makes it a primary target. Guest OS isolation can be one preventive mehanism but 
-Guest OSs are often not completely isolated from each other and from the host OS because that would affect some necessary functionalities. For example, many hosted virtualization 
-solutions provide mechanisms called guest tools through which a guest OS can access files, directories, the copy/paste buffer, and other resources on the host OS or another guest OS.
- These communication mechanisms can inadvertently serve as an attack vector, such as transmitting malware or permitting an attacker to gain access to particular resources.  However, 
-bare metal virtualization software does not offer such sharing capabilities and this makes them a preferred choice when considering such requirements.
-In additon to guest-OS isolation, hypervisors mitigate attacks through the guest OS, by guest OS monitoring and image and snapshot management mechanisms. We discuss these mechanims
- briefly in the following sub-sections. 
+Like any other IT system, openstack based cloud deployments are vulnerable to security threats. The openstack security guideline identifies four elements in the security domain - users, applications, servers or networks that share common trust requirements and expectations within a system. Of which we can roughly cataegorize applications, servers and networks as virtual infrastructure. In this section we focus on how access control can be done to such virtual infrastructure so that only authenticated and authorized users or services get access. 
+The underlying virtualization technology with in openstack provides enterprise-level capabilities in any openstack deployment. As capabilities like scalability, efficency, uptime and the likes are controlled by it; important virtual infrastrcutre within openstack are also managed by the virtualization technology in use. 
+The openstack security guideline and the Hypervisor Support matrix (https://wiki.openstack.org/wiki/HypervisorSupportMatrix) present detailed information about the differnt supported virtualization tools and thier access control capabilities. However such capabilities vary from one version of the tool to another or one openstack release to another; so we focus more on general issues related to the security of virtual infrastructures.
+In virtualization the hypervisor has main responsibility to secure the entire virtualization environment. Hypervisors have to be secure enough to block attacks directed to the hypervisor itself, the host and/or the guest OS. Attackers usually try to break out of a guest OS so that they can gain access to the hypervisor, other guest OSs, or the underlying host. Compromise of the hypervisor can give control of all of its guest Oss to the attacker which makes it a primary target. Guest OS isolation can be one preventive mehanism but Guest OSs are often not completely isolated from each other and from the host OS because that would affect some necessary functionalities. For example, many hosted virtualization solutions provide mechanisms called guest tools through which a guest OS can access files, directories, the copy/paste buffer, and other resources on the host OS or another guest OS.
+These communication mechanisms can inadvertently serve as an attack vector, such as transmitting malware or permitting an attacker to gain access to particular resources.  However, bare metal virtualization software does not offer such sharing capabilities and this makes them a preferred choice when considering such requirements. In additon to guest-OS isolation, hypervisors mitigate attacks through the guest OS, by guest OS monitoring and image and snapshot management mechanisms. We discuss these mechanims  briefly in the following sub-sections. 
 
 Guest OS Isolation
 ******************
