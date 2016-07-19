@@ -99,15 +99,15 @@ environment is as secure as possible and in compliance with all relevant organiz
 System Development Life Cycle we suggest the following 5 phases for a secure virtualization environment planning and deployment.  Please refer the document for a more detailed 
 description of each of these phases.
 
-**Phase 1**: Initiation. This phase includes the tasks that an organization should perform before it starts to design a virtualization solution. These include identifying needs for virtualization, providing an overall vision for how virtualization solutions would support the mission of the organization, creating a high-level strategy for implementing virtualization solutions, developing virtualization policy, identifying platforms and applications that can be virtualized, and specifying business and functional requirements for the solution.
+**Phase 1: Initiation -** This phase includes the tasks that an organization should perform before it starts to design a virtualization solution. These include identifying needs for virtualization, providing an overall vision for how virtualization solutions would support the mission of the organization, creating a high-level strategy for implementing virtualization solutions, developing virtualization policy, identifying platforms and applications that can be virtualized, and specifying business and functional requirements for the solution.
 
-**Phase 2**: Planning and Design. In this phase, personnel specify the technical characteristics of the virtualization solution and related components. These include the authentication methods and the cryptographic mechanisms used to protect communications. At the end of this phase, solution components are procured.
+**Phase 2: Planning and Design -** In this phase, personnel specify the technical characteristics of the virtualization solution and related components. These include the authentication methods and the cryptographic mechanisms used to protect communications. At the end of this phase, solution components are procured.
 
-**Phase 3**: Implementation. In this phase, equipment is configured to meet operational and security requirements, installed and tested as a prototype, and then activated on a production network. Implementation includes altering the configuration of other security controls and technologies, such as security event logging, network management, and authentication server integration.
+**Phase 3: Implementation -** In this phase, equipment is configured to meet operational and security requirements, installed and tested as a prototype, and then activated on a production network. Implementation includes altering the configuration of other security controls and technologies, such as security event logging, network management, and authentication server integration.
 
-**Phase 4**: Operations and Maintenance. This phase includes security-related tasks that an organization should perform on an ongoing basis once the virtualization solution is operational, including log review, attack detection, and incident response.
+**Phase 4: Operations and Maintenance -** This phase includes security-related tasks that an organization should perform on an ongoing basis once the virtualization solution is operational, including log review, attack detection, and incident response.
 
-**Phase 5**: Disposition. This phase encompasses tasks that occur when a virtualization solution is being retired, including preserving information to meet legal requirements, sanitizing media, and disposing of equipment properly.
+**Phase 5: Disposition -** This phase encompasses tasks that occur when a virtualization solution is being retired, including preserving information to meet legal requirements, sanitizing media, and disposing of equipment properly.
 
 
 
