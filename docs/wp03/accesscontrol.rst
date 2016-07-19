@@ -74,18 +74,21 @@ Without virtualization, services are usually deployed on dedicated host for isol
 Guest OS Security (what guest security entails and recommended practices) 
 *****************
 
-Virtualization can be taken as an additional layer of security when it comes to guest OS security. In a non-virtualized environment, a compromise in the underlying OS can affect the hardware resources in the host machine. However, in virtualization access to hardware resources by the guest OS is mediated through hypervisors. Compromise in the guest OS cannot directly lead to misuse or compromise of the underlying hardware in the host machine. But as mentioned in section 2.2 above Guest OSs are often not completely isolated from each other and from the host OS. Which makes a compromise on the guest OS as a means to gain access to other guest OSs, the host OS and the hypervisor. We suggest the following recommendations that are extracted from the NIST … document
-•	Organizations that have security policies that cover network shared storage should apply those policies to shared disks in virtualization systems.
-•	Follow the recommended practices for managing the physical OS, e.g., time synchronization, log management, authentication, remote access, etc.
-•	Install all updates to the guest OS promptly. All modern OSs have features that will automatically check for updates and install them.
-•	Back up the virtual drives used by the guest OS on a regular basis, using the same policy for backups as is used for non-virtualized computers in the organization.
-•	In each guest OS, disconnect unused virtual hardware. This is particularly important for virtual drives (usually virtual CDs and floppy drives), but is also important for virtual network adapters other than the primary network interface and serial and/or parallel ports.
-•	Use separate authentication solutions for each guest OS unless there is a particular reason for two guest OSs to share credentials.
-•	Ensure that virtual devices for the guest OS are associated only with the appropriate physical devices on the host system, such as the mappings between virtual and physical NICs.
+Virtualization can be taken as an additional layer of security when it comes to guest OS security. In a non-virtualized environment, a compromise in the underlying OS can affect the hardware resources in the host machine. However, in virtualization access to hardware resources by the guest OS is mediated through hypervisors. Compromise in the guest OS cannot directly lead to misuse or compromise of the underlying hardware in the host machine. But as mentioned in section 2.2 above Guest OSs are often not completely isolated from each other and from the host OS. Which makes a compromise on the guest OS as a means to gain access to other guest OSs, the host OS and the hypervisor. We suggest the following recommendations that are extracted from the NIST Guide to Security for Full Virtualization Technologies -
+
+*	Organizations that have security policies that cover network shared storage should apply those policies to shared disks in virtualization systems.
+*	Follow the recommended practices for managing the physical OS, e.g., time synchronization, log management, authentication, remote access, etc.
+*	Install all updates to the guest OS promptly. All modern OSs have features that will automatically check for updates and install them.
+*	Back up the virtual drives used by the guest OS on a regular basis, using the same policy for backups as is used for non-virtualized computers in the organization.
+*	In each guest OS, disconnect unused virtual hardware. This is particularly important for virtual drives (usually virtual CDs and floppy drives), but is also important for virtual network adapters other than the primary network interface and serial and/or parallel ports.
+*	Use separate authentication solutions for each guest OS unless there is a particular reason for two guest OSs to share credentials.
+*	Ensure that virtual devices for the guest OS are associated only with the appropriate physical devices on the host system, such as the mappings between virtual and physical NICs.
 
 If a guest OS on a hosted virtualization system is compromised, that guest OS can potentially infect other systems on the same hypervisor. The most likely way this can happen is that both systems are sharing disks or clipboards. If such sharing is turned on in two or more guest OSs, and one guest OS is compromised, the administrator of the virtualization system needs to decide how to deal with the potential compromise of other guest OSs. Two strategies for dealing with this situation are:
-•	Assume that all guest OSs on the same hardware have been compromised. Revert each guest OS to a known-good image that was saved before the compromise.
-•	Investigate each guest OS for compromise, just as one would during normal scanning for malware. If malware is found, follow the organization’s normal security policy.
+
+*	Assume that all guest OSs on the same hardware have been compromised. Revert each guest OS to a known-good image that was saved before the compromise.
+*	Investigate each guest OS for compromise, just as one would during normal scanning for malware. If malware is found, follow the organization’s normal security policy.
+
 The first method assumes that guest OSs are different than “regular” systems, while the second assumes that the organization’s current security policy is sufficient and should be applied to all systems in the same manner.
 
 Secure Virtualization Planning and Deployment (recommended security practices in the plan and deployment of virtualization)
@@ -95,10 +98,15 @@ A critical aspect of deploying a secure virtualization solution is careful plann
 environment is as secure as possible and in compliance with all relevant organizational policies. Based on the NIST SP 800-64 standard on Security Considerations in the Information 
 System Development Life Cycle we suggest the following 5 phases for a secure virtualization environment planning and deployment.  Please refer the document for a more detailed 
 description of each of these phases.
+
 Phase 1: Initiation. This phase includes the tasks that an organization should perform before it starts to design a virtualization solution. These include identifying needs for virtualization, providing an overall vision for how virtualization solutions would support the mission of the organization, creating a high-level strategy for implementing virtualization solutions, developing virtualization policy, identifying platforms and applications that can be virtualized, and specifying business and functional requirements for the solution.
+
 Phase 2: Planning and Design. In this phase, personnel specify the technical characteristics of the virtualization solution and related components. These include the authentication methods and the cryptographic mechanisms used to protect communications. At the end of this phase, solution components are procured.
+
 Phase 3: Implementation. In this phase, equipment is configured to meet operational and security requirements, installed and tested as a prototype, and then activated on a production network. Implementation includes altering the configuration of other security controls and technologies, such as security event logging, network management, and authentication server integration.
+
 Phase 4: Operations and Maintenance. This phase includes security-related tasks that an organization should perform on an ongoing basis once the virtualization solution is operational, including log review, attack detection, and incident response.
+
 Phase 5: Disposition. This phase encompasses tasks that occur when a virtualization solution is being retired, including preserving information to meet legal requirements, sanitizing media, and disposing of equipment properly.
 
 
