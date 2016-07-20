@@ -13,7 +13,7 @@ The Openstack foundation has identified the following core points as the main re
 *	The best test of interoperability in the cloud is the ability to enable a user with one set of credentials in an IdP to access multiple cloud services. Organizations, each using its own IdP can easily allow their users to collaborate and quickly share the same cloud services.
 *	Removes a blocker to cloud brokering and multi-cloud workload management. There is no need to build additional authentication mechanisms to authenticate users, since the IdPs take care of authenticating their own users using whichever technologies they deem to be appropriate. In most organizations, multiple authentication technologies are already in use.
 
-Security overview in Federated Cloud Infrastructure (what makes federated cloud different when it comes to security)
+Security overview in Federated Cloud Infrastructure 
 ***************************************************
 
 Security in any IT system entails the Confidentiality, Integrity and Availability of the system as a whole and its individual components (data and infrastructure). Confidentiality ensures that information is accessible only to authorized people and if unauthorized entitles get access to data, they shouldn´t get any valuable information out of it. With integrity a system shall block un-authorized modification of data. The third pillar deals with making systems available for users. So that the system functions properly in which ever circumstance. These basic three pillars still apply to Cloud Computing Systems and the change is in how one can keep the Confidentiality, Integrity and Availability of systems.
@@ -28,9 +28,8 @@ Apart from keeping the confidentiality and integrity of systems and data, availa
 
 Based on what we have experienced so far there are systems and solutions in the Nordics that can aid the security of the Glenna Federation and we try to come up with security solutions that can be added on top of the existing ones and makes the entire system more secure.  In the next section we go through the suggested security architecture and security components specifications for Glenna.
 
-Security Architecture and Specification for Glenna (suggested security architecture for Glenna and specifications 
+Security Architecture and Specification for Glenna  
 **************************************************
-of its security components)
 
 The three Cloud Service Models (IaaS, PaaS and SaaS) have different levels of extensibility and security responsibility for the cloud service provider. According to the CSA description - 
 
@@ -44,7 +43,7 @@ The spectrum of IaaS vendors is very wide, in which some offer large full data-c
 
 In SaaS it’s possible to implement a Pay per use or free for use licensing model in which the customer is subscribed to a complete cloud hardware, software and maintenance package. In this service model it´s not hard to realize the limited access customers have to the underlying infrastructure, which puts the main security responsibility on the service provider. 
 
-PaaS is similar to SaaS, but the service is an entire application development environment, not just the use of an application. PaaS solutions differ from SaaS solutions in that they provide a cloud-hosted virtual development platform, accessible via a Web browser [ ]. NIST describes PaaS as - “The capability provided to the consumer is to deploy onto the cloud infrastructure consumer-created or acquired applications created using programming languages and tools supported by the provider. The customer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage,  but has control over the deployed applications and possibly application hosting environment configurations.” The main target customers of PaaS delivery are developers and some example services include Google App Engine and Sales Force PaaS service at force.com.
+PaaS is similar to SaaS, but the service is an entire application development environment, not just the use of an application. PaaS solutions differ from SaaS solutions in that they provide a cloud-hosted virtual development platform, accessible via a Web browser [http://www.ijcta.com/documents/volumes/vol3issue1/ijcta2012030164.pdf]. NIST describes PaaS as - “The capability provided to the consumer is to deploy onto the cloud infrastructure consumer-created or acquired applications created using programming languages and tools supported by the provider. The customer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage,  but has control over the deployed applications and possibly application hosting environment configurations.” The main target customers of PaaS delivery are developers and some example services include Google App Engine and Sales Force PaaS service at force.com.
 
 As mentioned in the beginning of this section for each service delivery model the security responsibility level of customers and service providers varies.  But in any of the models the service providers have responsibility and in this document we give due emphasis to recommend security solutions and approaches to the service providers involved in Glenna. In addition to the usual cloud service delivery model, the federation induces its challenge in security. To mitigate with such challenges, we first suggest security architecture for Glenna that mainly covers how federation can be implemented in a secure manner. Then the subsequent chapters will cover other important security aspects in the cloud.
 
