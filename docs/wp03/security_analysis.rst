@@ -1,9 +1,21 @@
 Security Analysis, Test and Evaluation
 ======================================
 
-In this section we discuss about the tasks we have done with respect to the analysis and evaluation of the security mechanisms used in the cloud infrastructure of the service providers with in Glenna. Due to resource limitations and the different status the participating institutes were with respect to cloud deployment and service adoption, it was not possible to make a uniform and detailed security analysis. As a possible solution however we decided to check the state of the art in the security mechaisms of the cloud service providers we have prepared a questionnaire that is adapted from the Consensus Assesments Initiative Questionnaire prepared by Cloud Security Alliances (CSA) in a way that can fit our information requirements for Glenna project. The questionnaire was distributed to four cloud service providers and we have received three responses. The questionnaire is annexed in the NEIC glenna wiki page and can be referred from there. 
+In this section we discuss about the tasks we have done with respect to the analysis and evaluation of the security mechanisms used in the cloud infrastructure of the service providers within Glenna. When we refer to Glenna, it roughly has two components. First is the cloud infrastructure in use by the participating countries. Due to resource limitations and the different status the participating institutes were on with respect to cloud deployment and service adoption, it was not possible to make a uniform and detailed security analysis. As an alternative however we made a survey to check the state of the art in the security mechaisms of the cloud service providers by preparing a questionnaire and collect information that we found necessary for Glenna project. The questionnaire was distributed to four cloud service providers and we have received three responses. The questionnaire is annexed in the NEIC glenna wiki page and can be referred from there. 
 
-In addition to the questionnaire we have also identified major security threats to cloud infrastuructre that can also possibly materialize in the cloud infrastructure within glenna. The CSA has done some concrete tasks with respect to identifying measures required to deal with various treats to cloud infrastructure and we mapped the possible threats to Glenna with measures required to mitigate with them and we advise the cloud service providers to consider those identified measures inorder to secure thier cloud and related IT infrastructure. In the next section we briefly discuss about the required measuers which CSA refer them as Cloud Control Matrix (CCM)
+The second component in Glenna is the mechanism used to enable federated authentication to make the available cloud services accessible to users. Within the participating cloud service providers there were two federated autentication solutions used : 
+
+* kalmar2: by DeIC for Data.dk service and by USIT for Lifeportal and 
+
+* Dataporten: by UH-IaaS as a way to connect to openstack keystone module
+
+In this way service providers make thier service available by authenticating users through federated auhtentication solution and without users' authentication credential within the cloud service provider's premise. In Data DeIC for instance, users can access the data storage service after authentication through kalmar2. In UH-IaaS, users can login to the openstack based cloud service through Dataporten. In both cases the federated authentication solutions are based on industry standards and users' credentials are handled in a secure manner. For more information on security in kalmar2 and Dataporten please refer to (https://www.kalmar2.org/kalmar2web/members_attchmt/appendix_A_2010_10_25.pdf)  and (https://www.uninett.no/tjenester/dataporten/personvern-og-informasjonssikkerhet).   
+
+Based on the responses we got from the quesionnare, 
+
+
+In addition to the questionnaire we put our focus on major security threats to cloud infrastuructre that can possibly materialize in the cloud infrastructure within glenna. The CSA has done some concrete tasks with respect to identifying measures required to deal with various treats to cloud infrastructure and we mapped the possible threats to Glenna with measures required to mitigate with them and we advise the cloud service providers to consider those identified measures inorder to secure thier cloud and related IT infrastructure. In the next section we briefly discuss about the required measuers which CSA refer them as Cloud Control Matrix (CCM)
+
 
 Whati is CCM?
 *************
