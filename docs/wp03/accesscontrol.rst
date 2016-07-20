@@ -65,12 +65,12 @@ Hypervisors are responsible for various tasks within a virtualized environment a
 *	There have been some concerns in the security community about designing hypervisors so that they cannot be detected by attackers. The motivation for this was to provide an additional layer of security that is invisible to the attacker, thus preventing successful attacks against the hypervisor and the host OS underneath it. One of the basic principles of security design, however suggests that the the design of a security solution shall not depend on its secrecy. In addition, hypervisors have various characteristics that permit attackers to detect their presence. Detection techniques include checking for hypervisor artifacts in processes, file system, registry, and memory; checking for hypervisor-specific processor instructions or capabilities; and checking for hypervisor-specific virtual hardware devices. These detection techniques are hypervisor implementation-dependent. Although hypervisor detection can be deterred by a vendor modifying the hypervisor’s implementation or hiding its identifiable software artifacts, it is not possible to completely hide all characteristics. When planning their virtualization security, organizations shall not assume that attackers will not be able to detect the presence of a hypervisor or the product type and version.
 
 
-Host Security (what host security entails and recommended practices)
+Host Security 
 *************
 
 Without virtualization, services are usually deployed on dedicated host for isolation. In virtualization, a single host can be used multiple VMs each running an OS and one or more services. This is one of the advantages of virtualization but it at the same time makes the security of the host more critical as a compromise can affect multiple services. The increase in the number of services running on a single host increases the attack vector and a compromise on any of the running services can open a security hole on the other services sharing the same host. A holistic view of the system operations as well as security solutions is required for any of our actions on the host as well as the VMs and services running on it. Apart from that security solutions and policies that apply for any host in the organization’s environment can be applied on hosts involved in a virtualized environment. 
 
-Guest OS Security (what guest security entails and recommended practices) 
+Guest OS Security 
 *****************
 
 Virtualization can be taken as an additional layer of security when it comes to guest OS security. In a non-virtualized environment, a compromise in the underlying OS can affect the hardware resources in the host machine. However, in virtualization access to hardware resources by the guest OS is mediated through hypervisors. Compromise in the guest OS cannot directly lead to misuse or compromise of the underlying hardware in the host machine. But as mentioned in section 2.2 above Guest OSs are often not completely isolated from each other and from the host OS. Which makes a compromise on the guest OS as a means to gain access to other guest OSs, the host OS and the hypervisor. We suggest the following recommendations that are extracted from the NIST Guide to Security for Full Virtualization Technologies -
@@ -90,7 +90,7 @@ If a guest OS on a hosted virtualization system is compromised, that guest OS ca
 
 The first method assumes that guest OSs are different than “regular” systems, while the second assumes that the organization’s current security policy is sufficient and should be applied to all systems in the same manner.
 
-Secure Virtualization Planning and Deployment (recommended security practices in the plan and deployment of virtualization)
+Secure Virtualization Planning and Deployment
 *********************************************
 
 A critical aspect of deploying a secure virtualization solution is careful planning prior to installation, configuration, and deployment. This helps ensure that the virtual 
