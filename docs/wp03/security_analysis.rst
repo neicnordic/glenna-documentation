@@ -424,3 +424,4 @@ Threat 9: Shared Technology Vulnerabilities
 
 **IVS-01 (SA-14)**
 
+Note: One can get the most out of this mapping of top threats to cloud control matrix by prioretizing the most probable threats based on a detailed risk assesment of the cloud infrastructure and focusing on the controls that help to counter those threats. For instance if a risk assesment identifies the most probable threat for cloud service provider X is "Data Loss", the cloud service provider shall give more emphasis on implementing the controls that are mapped to the "Data Loss" threat (i.e. BCR-11, GRM-02, BCR-05 and BCR-06).
