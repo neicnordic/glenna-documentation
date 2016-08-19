@@ -55,14 +55,14 @@ We suggested the following security architecture for the Glenna project consider
 .. image:: images/glenna_arch.png
       :alt: Glenna Security Architecture
 
-As we have already discussed above, authorization to users can be given solely based on the institute extracted in their user account or based on groups or projects formed by individuals from on or more institutes. In the first case authentication is the major security task and can be handled through the federated authentication mechanism in place. In the second case, authorization of resources and billing to resource utilization shall take into consideration the groups and projects of users. The Glenna security architecture can be implemented in two ways with respect to tracking information about users (in addition to users' main affiliation).
+As we have already discussed above, authorization to users can be given solely based on the institute extracted in their user account or based on groups or projects formed by individuals from on or more institutes. In the first case authentication is the major security task and can be handled through the federated authentication mechanism in place. In the second case, authorization of resources and billing to resource utilization shall take into consideration the groups and projects of users. The Glenna security architecture can be implemented in two ways with respect to tracking information about users.
 
-**Case I:** Each cloud service provider shall implement a mechanism to create datastore and keep track of users, groups and/or projects information, along with its cloud service delivery mechanism. The following figure shows how one can implement this option.
+**Option I:** Each cloud service provider shall implement a mechanism to create datastore and keep track of users, groups and/or projects information, along with its cloud service delivery mechanism. The following figure shows how one can implement this option.
 
 .. image:: images/glenna_arch_impl1.png
-      :alt: Implementation of the Glenna Security Architecture Case I
+      :alt: Implementation of the Glenna Security Architecture Option I
 
-**Case II:** Glenna can have a resource to store such information and maintain data about users belonging to groups and projects and resources that members of the projects and groups are authorized to access from the cloud service providers within Glenna. The following figure shows how one can implement this option.
+**Option II:** Glenna can have a resource to store such information and maintain data about users belonging to groups and projects and resources that members of the projects and groups are authorized to access from the cloud service providers within Glenna. The following figure shows how one can implement this option.
       
 .. image:: images/glenna_arch_impl2.png
-      :alt: Implementation of the Glenna Security Architecture Case II
+      :alt: Implementation of the Glenna Security Architecture Option II
