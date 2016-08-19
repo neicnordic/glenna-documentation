@@ -93,6 +93,9 @@ These are the top threats that materialized on cloud infrastructures and impleme
 
 The controls for each threat are identified from the CCM V 1.0 and V 3.0.1. At the time of the publication of the top threats, the available CCM version was V 1.0 and CSA has suggested controls from the list of controls in version 1.0. At the time of this writing, the latest CCM version is (V 3.0.1) and in order to entertain these latest measures in our project, we made mapping of those controls from V 1.0 (suggested to the Top Cloud Computing Threats) to the controls in CCM version 3.0.1. 
 
+.. image:: images/threat-control-mapping.png
+      :alt: Mapping Cloud Threats to Controls from CCM
+
 Each control in the CCM is identified by a unique ID that comprises the category of the control (three alphabets for controls in version 3.01.1 and two alphabets in V 1.0) and a number. For instance Identity & Access Management controls are identified by IAM followed by a number (e.g. IAM-01) in CCM V 3.0.1. On the other hand, V 1.0 refers "Security Architecture - User ID Credentials" as SA followed by a number (e.g. SA-01).
 
 In the following section we listed the top nine cloud computing threats and the controls that are suggested for each threat. For ease of reference we put the ID of the control from v 3.0.1 followed by the id of a similar control in the previous version (which is put in bracket). As shown below for each threat there is a list of controls that one can use to mitigate with. For Threat 1 for instance there are 11 suggested controls. All required controls for the nine notorious cloud security threats are listed in the section below. Please note that, controls that are described in one threat will not be described again in another threat to avoid repetition. 
