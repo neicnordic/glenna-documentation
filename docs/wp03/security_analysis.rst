@@ -100,23 +100,23 @@ In the following section we listed the top nine cloud computing threats and the 
 Threat 1: Data Breaches
 *********************
 
-**BCR-11 (DG-04): Business Continuity Management & Operational Resilience Retention Policy**
+**DG-04 => BCR-11 : Business Continuity Management & Operational Resilience Retention Policy**
 
 **Description:** Policies and procedures shall be established, and supporting business processes and technical measures implemented, for defining and adhering to the retention period of any critical asset as per established policies and procedures, as well as applicable legal, statutory, or regulatory compliance obligations. Backup and recovery measures shall be incorporated as part of business continuity planning and tested accordingly for effectiveness.
 
-**DSI-07 (DG-05): Data Security & Information Lifecycle Management Secure Disposal**
+**DG-05 => DSI-07: Data Security & Information Lifecycle Management Secure Disposal**
 
 **Description:** Any use of customer data in non-production environments requires explicit, documented approval from all customers whose data is affected, and must comply with all legal and regulatory requirements for scrubbing of sensitive data elements.
 
-**DSI-05 (DG-06): Data Security & Information Lifecycle Management Non-Production Data**
+**DG-06 => DSI-05: Data Security & Information Lifecycle Management Non-Production Data**
 
 **Description:** Production data shall not be replicated or used in non-production environments.
 
-**AIS-04 (DG-07): Application & Interface Security Data Security / Integrity**
+**DG-07 => AIS-04: Application & Interface Security Data Security / Integrity**
 
 **Description:** Policies and procedures shall be established and maintained in support of data security to include (confidentiality, integrity and availability) across multiple system interfaces, jurisdictions and business functions to prevent improper disclosure, alteration, or destruction.
 
-**GRM-02 (DG-08): Governance and Risk Management Data Focus Risk Assessments**
+**DG-08 => GRM-02: Governance and Risk Management Data Focus Risk Assessments**
 
 **Description:** Risk assessments associated with data governance requirements shall be conducted at planned intervals and shall consider the following:
 
@@ -124,15 +124,15 @@ Threat 1: Data Breaches
 * Compliance with defined retention periods and end-of-life disposal requirements
 * Data classification and protection from unauthorized use, access, loss, destruction, and falsification
 
-**EKM-03 (IS-18): Encryption & Key Management Sensitive Data Protection**
+**IS-18 => EKM-03: Encryption & Key Management Sensitive Data Protection**
 
 **Description:** Policies and procedures shall be established, and supporting business processes and technical measures implemented, for the use of encryption protocols for protection of sensitive data in storage (e.g., file servers, databases, and end-user workstations), data in use (memory), and data in transmission (e.g., system interfaces, over public networks, and electronic messaging) as per applicable legal, statutory, and regulatory compliance obligations.
 
-**EKM-02 (IS-19): Encryption & Key Management Key Generation**
+**IS-19 => EKM-02: Encryption & Key Management Key Generation**
 
 **Description:** Policies and procedures shall be established for the management of cryptographic keys in the service's cryptosystem (e.g., lifecycle management from key generation to revocation and replacement, public key infrastructure, cryptographic protocol design and algorithms used, access controls in place for secure key generation, and exchange and storage including segregation of keys used for encrypted data or sessions). Upon request, provider shall inform the customer (tenant) of changes within the cryptosystem, especially if the customer (tenant) data is used as part of the service, and/or the customer (tenant) has some shared responsibility over implementation of the control.
 
-**IAM-12 (SA-02): Identity & Access Management User ID Credentials**
+**SA-02 => IAM-12: Identity & Access Management User ID Credentials**
 
 **Description:** Internal corporate or customer (tenant) user account credentials shall be restricted as per the following, ensuring appropriate identity, entitlement, and access management and in accordance with established policies and procedures:
 
@@ -141,15 +141,15 @@ Threat 1: Data Breaches
 * Account credential and/or identity store minimization or re-use when feasible
 * Adherence to industry acceptable and/or regulatory compliant authentication, authorization, and accounting (AAA) rules (e.g., strong/multi-factor, expireable, non-shared authentication secrets)
 
-**AIS-04 (SA-03): Application & Interface Security Data Security / Integrity**
+**SA-03 => AIS-04: Application & Interface Security Data Security / Integrity**
 
 **Description:** Policies and procedures shall be established and maintained in support of data security to include (confidentiality, integrity and availability) across multiple system interfaces, jurisdictions and business functions to prevent improper disclosure, alteration, or destruction.
 
-**IVS-08 (SA-06): Infrastructure & Virtualization Security Production / Non-Production Environments**
+**SA-06 => IVS-08: Infrastructure & Virtualization Security Production / Non-Production Environments**
 
 **Description:** Production and non-production environments shall be separated to prevent unauthorized access or changes to information assets. Separation of the environments may include: stateful inspection firewalls, domain/realm authentication sources, and clear segregation of duties for personnel accessing these environments as part of their job duties.
 
-**IAM-12 (SA-07): Identity & Access Management User ID Credentials**
+**SA-07 => IAM-12: Identity & Access Management User ID Credentials**
 
 **Description:** Internal corporate or customer (tenant) user account credentials shall be restricted as per the following, ensuring appropriate identity, entitlement, and access management and in accordance with established policies and procedures:
 
@@ -161,22 +161,22 @@ Threat 1: Data Breaches
 Threat 2: Data Loss
 *******************
 
-**BCR-11 (DG-04)**
+**DG-04 => BCR-11**
 
-**GRM-02 (DG-08)**
+**DG-08 => GRM-02**
 
-**BCR-05 (RS-05): Business Continuity Management & Operational Resilience Environmental Risks**
+**RS-05 => BCR-05: Business Continuity Management & Operational Resilience Environmental Risks**
 
 **Description:** Physical protection against damage from natural causes and disasters, as well as deliberate attacks, including fire, flood, atmospheric electrical discharge, solar induced geomagnetic storm, wind, earthquake, tsunami, explosion, nuclear accident, volcanic activity, biological hazard, civil unrest, mudslide, tectonic activity, and other forms of natural or man-made disaster shall be anticipated, designed, and have countermeasures applied.
 
-**BCR-06 (RS-06): Business Continuity Management & Operational Resilience Equipment Location**
+**RS-06 => BCR-06: Business Continuity Management & Operational Resilience Equipment Location**
 
 **Description:** To reduce the risks from environmental threats, hazards, and opportunities for unauthorized access, equipment shall be kept away from locations subject to high probability environmental risks and supplemented by redundant equipment located at a reasonable distance.
 
 Threat 3: Account or Service Traffic Hijacking	
 **********************************************
 
-**IAM-02 (IS-07): Identity & Access Management Credential Lifecycle / Provision Management**
+**IS-07 => IAM-02: Identity & Access Management Credential Lifecycle / Provision Management**
 
 **Description:** User access policies and procedures shall be established, and supporting business processes and technical measures implemented, for ensuring appropriate identity, entitlement, and access management for all internal corporate and customer (tenant) users with access to data and organizationally-owned or managed (physical and virtual) application interfaces and infrastructure network and systems components. These policies, procedures, processes, and measures must incorporate the following:
 
@@ -190,127 +190,127 @@ Threat 3: Account or Service Traffic Hijacking
 * Permissions and supporting capabilities for customer (tenant) controls over authentication, authorization, and accounting (AAA) rules for access to data and sessions
 * Adherence to applicable legal, statutory, or regulatory compliance requirements
 
-**IAM-08 and IAM-09 (IS-08): Identity & Access Management Trusted Sources (IAM-08) and Identity & Access Management User Access Authorization (IAM-09)**
+**IS-08 => IAM-08 and IAM-09: Identity & Access Management Trusted Sources (IAM-08) and Identity & Access Management User Access Authorization (IAM-09)**
 
 **IAM-08**
 
 **Description:** Policies and procedures are established for permissible storage and access of identities used for authentication to ensure identities are only accessible based on rules of least privilege and replication limitation only to users explicitly defined as business necessary.
 
-**IAM-009**
+**IAM-09**
 
 **Description:** Provisioning user access (e.g., employees, contractors, customers (tenants), business partners and/or supplier relationships) to data and organizationally-owned or managed (physical and virtual) applications, infrastructure systems, and network components shall be authorized by the organization's management prior to access being granted and appropriately restricted as per established policies and procedures. Upon request, provider shall inform customer (tenant) of this user access, especially if customer (tenant) data is used as part the service and/or customer (tenant) has some shared responsibility over implementation of control.
 
-**IAM-11 (IS-09): Identity & Access Management User Access Revocation**
+**IS-09 => IAM-11: Identity & Access Management User Access Revocation**
 
 **Description:** Timely de-provisioning (revocation or modification) of user access to data and organizationally-owned or managed (physical and virtual) applications, infrastructure systems, and network components, shall be implemented as per established policies and procedures and based on user's change in status (e.g., termination of employment or other business relationship, job change or transfer). Upon request, provider shall inform customer (tenant) of these changes, especially if customer (tenant) data is used as part the service and/or customer (tenant) has some shared responsibility over implementation of control.
 
-**IAM-10 (IS-10): Identity & Access Management User Access Reviews**
+**IS-10 => IAM-10: Identity & Access Management User Access Reviews**
 
 **Description:** User access shall be authorized and revalidated for entitlement appropriateness, at planned intervals, by the organization's business leadership or other accountable business role or function supported by evidence to demonstrate the organization is adhering to the rule of least privilege based on job function. For identified access violations, remediation must follow established user access policies and procedures.
 
-**SEF-02 (IS-22): Security Incident Management, E-Discovery & Cloud Forensics Incident Management**
+**IS-22 => SEF-02: Security Incident Management, E-Discovery & Cloud Forensics Incident Management**
 
 **Description:** Policies and procedures shall be established, and supporting business processes and technical measures implemented, to triage security-related events and ensure timely and thorough incident management, as per established IT service management policies and procedures.
 
-**IAM-12 (SA-02)**
+**SA-02 => IAM-12**
 
-**IAM-12 (SA-07)**
+**SA-07 => IAM-12**
 
-**IVS-01 (SA-14): Infrastructure & Virtualization Security Audit Logging / Intrusion Detection**
+**SA-14 => IVS-01: Infrastructure & Virtualization Security Audit Logging / Intrusion Detection**
 
 **Description:** Higher levels of assurance are required for protection, retention, and lifecycle management of audit logs, adhering to applicable legal, statutory or regulatory compliance obligations and providing unique user access accountability to detect potentially suspicious network behaviors and/or file integrity anomalies, and to support forensic investigative capabilities in the event of a security breach.
 
 Threat 4: Insecure Interfaces and APIs
 **************************
 
-**IAM-08 and IAM-09 (IS-08)**
+**IS-08 => IAM-08 and IAM-09**
 
-**AIS-04 (SA-03)**
+**SA-03 => AIS-04**
 
-**AIS-01 (SA-04): Application & Interface Security Application Security**
+**SA-04 => AIS-01: Application & Interface Security Application Security**
 
 **Description:** Applications and programming interfaces (APIs) shall be designed, developed, deployed, and tested in accordance with leading industry standards (e.g., OWASP for web applications) and adhere to applicable legal, statutory, or regulatory compliance obligations.
 
 Threat 5: Denial of Service
 ******************
-**GRM-01 (IS-04): Governance and Risk Management Baseline Requirement**
+**IS-04 => GRM-01: Governance and Risk Management Baseline Requirement**
 
 **Description:** Baseline security requirements shall be established for developed or acquired, organizationally-owned or managed, physical or virtual, applications and infrastructure system and network components that comply with applicable legal, statutory and regulatory compliance obligations. Deviations from standard baseline configurations must be authorized following change management policies and procedures prior to deployment, provisioning, or use. Compliance with security baseline requirements must be reassessed at least annually unless an alternate frequency has been established and authorized based on business need.
 
-**IVS-04 (OP-03): Infrastructure & Virtualization Security Information System Documentation**
+**OP-03 => IVS-04: Infrastructure & Virtualization Security Information System Documentation**
 
 **Description:** The availability, quality, and adequate capacity and resources shall be planned, prepared, and measured to deliver the required system performance in accordance with legal, statutory, and regulatory compliance obligations. Projections of future capacity requirements shall be made to mitigate the risk of system overload.
 
-**BCR-08 (RS-07): Business Continuity Management & Operational Resilience Equipment Power Failures**
+**RS-07 => BCR-08: Business Continuity Management & Operational Resilience Equipment Power Failures**
 
 **Description:** Protection measures shall be put into place to react to natural and man-made threats based upon a geographically-specific Business Impact Assessment
 
-**AIS-01 (SA-04)**
+**SA-04 => AIS-01**
 
 Threat 6: Malicious Insiders
 ************************
 
-**STA-09 (CO-03): Supply Chain Management, Transparency and Accountability Third Party Audits**
+**CO-03 => STA-09: Supply Chain Management, Transparency and Accountability Third Party Audits**
 
 **Description:** Third-party service providers shall demonstrate compliance with information security and confidentiality, access control, service definitions, and delivery level agreements included in third-party contracts. Third-party reports, records, and services shall undergo audit and review at least annually to govern and maintain compliance with the service delivery agreements.
 
-**DSI-06 (DG-01): Data Security & Information Lifecycle Management Ownership / Stewardship**
+**DG-01 => DSI-06: Data Security & Information Lifecycle Management Ownership / Stewardship**
 
 **Description:** All data shall be designated with stewardship, with assigned responsibilities defined, documented, and communicated.
 
-**DSI-01 (DG-03): Data Security & Information Lifecycle Management  Classification**
+**DG-03 => DSI-01: Data Security & Information Lifecycle Management  Classification**
 
 **Description:** Data and objects containing data shall be assigned a classification by the data owner based on data type, value, sensitivity, and criticality to the organization.
 
-**DSI-04 (DG-07): Data Security & Information Lifecycle Management Handling / Labeling / Security Policy**
+**DG-07 => DSI-04: Data Security & Information Lifecycle Management Handling / Labeling / Security Policy**
 
 **Description:** Policies and procedures shall be established for the labeling, handling, and security of data and objects which contain data. Mechanisms for label inheritance shall be implemented for objects that act as aggregate containers for data.
-**DCS-09 (FS-02): Datacenter Security User Access**
+**FS-02 => DCS-09: Datacenter Security User Access**
 
 **Description:** Physical access to information assets and functions by users and support personnel shall be restricted.
 
-**DCS-08 (FS-05): Datacenter Security Unauthorized Persons Entry**
+**FS-05 => DCS-08: Datacenter Security Unauthorized Persons Entry**
 
 **Description:** Ingress and egress points such as service areas and other points where unauthorized personnel may enter the premises shall be monitored, controlled and, if possible, isolated from data storage and processing facilities to prevent unauthorized data corruption, compromise, and loss.
 
 
-**DCS-04 (FS-06): Datacenter Security Off-Site Authorization**
+**FS-06 => DCS-04: Datacenter Security Off-Site Authorization**
 
 **Description:** Authorization must be obtained prior to relocation or transfer of hardware, software, or data to an offsite premises.
 
-**HRS-02 (HR-01): Human Resources Background Screening**
+**HR-01 => HRS-02: Human Resources Background Screening**
 
 **Description:** Pursuant to local laws, regulations, ethics, and contractual constraints, all employment candidates, contractors, and third parties shall be subject to background verification proportional to the data classification to be accessed, the business requirements, and acceptable risk.
 
-**GRM-07 (IS-06): Governance and Risk Management Policy Enforcement**
+**IS-06 => GRM-07: Governance and Risk Management Policy Enforcement**
 
 **Description:** A formal disciplinary or sanction policy shall be established for employees who have violated security policies and procedures. Employees shall be made aware of what action might be taken in the event of a violation, and disciplinary measures must be stated in the policies and procedures.
 
-**IAM-08 and IAM-09 (IS-08)**
+**IS-08 => IAM-08 and IAM-09**
 
-**IAM-10 (IS-10)**
+**IS-10 => IAM-10**
 
-**HRS-07 (IS-13): Human Resources Roles / Responsibilities**
+**IS-13 => HRS-07: Human Resources Roles / Responsibilities**
 
 **Description:** Roles and responsibilities of contractors, employees, and third-party users shall be documented as they relate to information assets and security.
 
-**IAM-05 (IS-15): Identity & Access Management Segregation of Duties**
+**IS-15 => IAM-05: Identity & Access Management Segregation of Duties**
 
 **Description:** User access policies and procedures shall be established, and supporting business processes and technical measures implemented, for restricting user access as per defined segregation of duties to address business risks associated with a user-role conflict of interest.
 
-**EKM-03 (IS-18)**
+**IS-18 => EKM-03**
 
-**EKM-02 (IS-19)**
+**IS-19 => EKM-02**
 
-**IAM-01 (IS-29): Identity & Access Management Audit Tools Access**
+**IS-29 => IAM-01: Identity & Access Management Audit Tools Access**
 
 **Description:** Access to, and use of, audit tools that interact with the organization's information systems shall be appropriately segmented and restricted to prevent compromise and misuse of log data.
 
-**GRM-10 (RI-02): Governance and Risk Management Risk Assessments**
+**RI-02 => GRM-10: Governance and Risk Management Risk Assessments**
 
 **Description:** Aligned with the enterprise-wide framework, formal risk assessments shall be performed at least annually or at planned intervals, (and in conjunction with any changes to information systems) to determine the likelihood and impact of all identified risks using qualitative and quantitative methods. The likelihood and impact associated with inherent and residual risk shall be determined independently, considering all risk categories (e.g., audit results, threat and vulnerability analysis, and regulatory compliance).
 
-**IVS-09 (SA-09): Infrastructure & Virtualization Security Segmentation**
+**SA-09 => IVS-09: Infrastructure & Virtualization Security Segmentation**
 
 **Description:** Multi-tenant organizationally-owned or managed (physical and virtual) applications, and infrastructure system and network components, shall be designed, developed, deployed and configured such that provider and customer (tenant) user access is appropriately segmented from other tenant users, based on the following considerations:
 
@@ -321,35 +321,35 @@ Threat 6: Malicious Insiders
 Threat 7: Abuse of Cloud Services
 *******************
 
-**SEF-04 (IS-24): Security Incident Management, E-Discovery & Cloud Forensics Incident Response Legal Preparation**
+**IS-24 => SEF-04: Security Incident Management, E-Discovery & Cloud Forensics Incident Response Legal Preparation**
 
 **Description:** Proper forensic procedures, including chain of custody, are required for the presentation of evidence to support potential legal action subject to the relevant jurisdiction after an information security incident. Upon notification, customers and/or other external business partners impacted by a security breach shall be given the opportunity to participate as is legally permissible in the forensic investigation.
 
-**HRS-08 (IS-26): Human Resources Technology Acceptable Use**
+**IS-26 => HRS-08: Human Resources Technology Acceptable Use**
 
 **Description:** Policies and procedures shall be established, and supporting business processes and technical measures implemented, for defining allowances and conditions for permitting usage of organizationally-owned or managed user end-point devices (e.g., issued workstations, laptops, and mobile devices) and IT infrastructure network and systems components. Additionally, defining allowances and conditions to permit usage of personal mobile devices and associated applications with access to corporate resources (i.e., BYOD) shall be considered and incorporated as appropriate.
 
 Threat 8: Insufficient Due Diligence
 ************
-**GRM-02 (DG-08)**
+**DG-08 => GRM-02**
 
-**GRM-01 (IS-04)**
+**IS-04 => GRM-01**
 
-**IAM-08 (IS-12): Identity & Access Management Trusted Sources**
+**IS-12 => IAM-08: Identity & Access Management Trusted Sources**
 
 **Description:** Policies and procedures are established for permissible storage and access of identities used for authentication to ensure identities are only accessible based on rules of least privilege and replication limitation only to users explicitly defined as business necessary.
 
-**IVS-04 (OP-03)**
+**OP-03 => IVS-04**
 
-**GRM-11 (RI-01): Governance and Risk Management Risk Management Framework**
+**RI-01 => GRM-11: Governance and Risk Management Risk Management Framework**
 
 **Description:** Risks shall be mitigated to an acceptable level. Acceptance levels based on risk criteria shall be established and documented in accordance with reasonable resolution time frames and stakeholder approval.
 
-**GRM-10 (RI-02): Governance and Risk Management Risk Assessments**
+**RI-02 => GRM-10: Governance and Risk Management Risk Assessments**
 
 **Description:** Aligned with the enterprise-wide framework, formal risk assessments shall be performed at least annually or at planned intervals, (and in conjunction with any changes to information systems) to determine the likelihood and impact of all identified risks using qualitative and quantitative methods. The likelihood and impact associated with inherent and residual risk shall be determined independently, considering all risk categories (e.g., audit results, threat and vulnerability analysis, and regulatory compliance).
 
-**BCR-01(RS-01) : Business Continuity Management & Operational Resilience, Business Continuity Planning**
+**RS-01 => BCR-01: Business Continuity Management & Operational Resilience, Business Continuity Planning**
 
 **Description:** A consistent unified framework for business continuity planning and plan development shall be established, documented and adopted to ensure all business continuity plans are consistent in addressing priorities for testing, maintenance, and information security requirements. Requirements for business continuity plans include the following:
 
@@ -360,7 +360,7 @@ Threat 8: Insufficient Due Diligence
 * Detailed recovery procedures, manual work-around, and reference information
 * Method for plan invocation
 
-**BCR-09 (RS-02): Business Continuity Management & Operational Resilience Impact Analysis**
+**RS-02 => BCR-09: Business Continuity Management & Operational Resilience Impact Analysis**
 
 **Description:** There shall be a defined and documented method for determining the impact of any disruption to the organization (cloud provider, cloud consumer) that must incorporate the following:
 
@@ -373,7 +373,7 @@ Threat 8: Insufficient Due Diligence
 * Establish recovery time objectives for resumption of critical products and services within their maximum tolerable period of disruption
 * Estimate the resources required for resumption
 
-**BCR-01 (RS-03): Business Continuity Management & Operational Resilience Business Continuity Planning**
+**RS-03 => BCR-01: Business Continuity Management & Operational Resilience Business Continuity Planning**
 
 **Description:** A consistent unified framework for business continuity planning and plan development shall be established, documented and adopted to ensure all business continuity plans are consistent in addressing priorities for testing, maintenance, and information security requirements. Requirements for business continuity plans include the following:
 
@@ -384,37 +384,37 @@ Threat 8: Insufficient Due Diligence
 * Detailed recovery procedures, manual work-around, and reference information
 * Method for plan invocation
 
-**AIS-04 (SA-03)**
+**SA-03 => AIS-04**
 
-**AIS-01 (SA-04)**
+**SA-04 => AIS-01**
 
-**IVS-06 (SA-08): Infrastructure & Virtualization Security Network Security**
+**SA-08 => IVS-06: Infrastructure & Virtualization Security Network Security**
 
 **Description:** Network environments and virtual instances shall be designed and configured to restrict and monitor traffic between trusted and untrusted connections. These configurations shall be reviewed at least annually, and supported by a documented justification for use for all allowed services, protocols, and ports, and by compensating controls.
 
-**IVS-09 (SA-09)**
+**SA-09 => IVS-09**
 
 Threat 9: Shared Technology Vulnerabilities
 **********************
-**DSI-01 (DG-03)**
+**DG-03 => DSI-01**
 
-**GRM-01 (IS-04)**
+**IS-04 => GRM-01**
 
-**IAM-02 (IS-07)**
+**IS-07 => IAM-02**
 
-**IAM-05 (IS-15)**
+**IS-15 => IAM-05**
 
-**EKM-03 (IS-18)**
+**IS-18 => EKM-03**
 
-**TVM-02 (IS-20): Threat and Vulnerability Management Vulnerability / Patch Management**
+**IS-20 => TVM-02: Threat and Vulnerability Management Vulnerability / Patch Management**
 
 **Description:** Policies and procedures shall be established, and supporting processes and technical measures implemented, for timely detection of vulnerabilities within organizationally-owned or managed applications, infrastructure network and system components (e.g. network vulnerability assessment, penetration testing) to ensure the efficiency of implemented security controls. A risk-based model for prioritizing remediation of identified vulnerabilities shall be used. Changes shall be managed through a change management process for all vendor-supplied patches, configuration changes, or changes to the organization's internally developed software. Upon request, the provider informs customer (tenant) of policies and procedures and identfied weaknesses especially if customer (tenant) data is used as part the service and/or customer (tenant) has some shared responsibility over implementation of control.
 
-**IAM-12 (SA-02)**
+**SA-02 => IAM-12**
 
-**IVS-09 (SA-09)**
+**SA-09 => IVS-09**
 
-**IVS-09 (SA-11): Infrastructure & Virtualization Security Segmentation **
+**SA-11 => IVS-09: Infrastructure & Virtualization Security Segmentation **
 
 **Description:** Multi-tenant organizationally-owned or managed (physical and virtual) applications, and infrastructure system and network components, shall be designed, developed, deployed and configured such that provider and customer (tenant) user access is appropriately segmented from other tenant users, based on the following considerations:
 
@@ -422,6 +422,6 @@ Threat 9: Shared Technology Vulnerabilities
 * Isolation of business critical assets and/or sensitive user data, and sessions that mandate stronger internal controls and high levels of assurance
 * Compliance with legal, statutory and regulatory compliance obligations
 
-**IVS-01 (SA-14)**
+**SA-14 => IVS-01**
 
-Note: One can get the most out of this mapping of top threats to cloud control matrix by prioretizing the most probable threats based on a detailed risk assesment of the cloud infrastructure and focusing on the controls that help to counter those threats. For instance if a risk assesment identifies the most probable threat for cloud service provider X is "Data Loss", the cloud service provider shall give more emphasis on implementing the controls that are mapped to the "Data Loss" threat (i.e. BCR-11, GRM-02, BCR-05 and BCR-06).
+**Note:** One can get the most out of this mapping of top threats to cloud control matrix by prioretizing the most probable threats based on a detailed risk assesment of the cloud infrastructure and focusing on the controls that help to counter those threats. For instance if a risk assesment identifies the most probable threat for cloud service provider X is "Data Loss", the cloud service provider shall give more emphasis on implementing the controls that are mapped to the "Data Loss" threat (i.e. BCR-11, GRM-02, BCR-05 and BCR-06).
