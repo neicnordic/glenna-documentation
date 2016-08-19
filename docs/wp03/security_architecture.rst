@@ -1,8 +1,6 @@
 Security architecture and specification
 =======================================
 
-Develop the specification and architecture of the security components in Glenna.
-
 The Openstack foundation has identified the following core points as the main reasons why we need federated identity in cloud services and the challenges associated with them [http://docs.openstack.org/security-guide/identity/federated-keystone.html]: -
 
 *	Provisioning new identities often incurs some security risk. It is difficult to secure credential storage and to deploy it with proper policies. A common identity store is useful as it can be set up properly once and used in multiple places. With Federated Identity, there is no longer a need to provision user entries in Identity service, since the user entries already exist in the IdP’s databases.
